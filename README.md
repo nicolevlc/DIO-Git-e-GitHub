@@ -10,7 +10,8 @@ Repositório para armazenar resumos sobre Git e GitHub do curso Versionamento de
 
 | Aulas | Resumos |
 |-------|---------|
-| Gravando Alterações no Repositório Local | [Resumos]()|
+| Anotações de comandos Git | resumo principal |
+
 
 1. Inicia um novo repositório Git no diretório atual.
 ```
@@ -48,19 +49,19 @@ git push
 ```
 rm -rf nome_do_diretorio
 ```
-10. Restaura um arquivo do diretório para o estado em que estavam no último commit
+10. Restaura um arquivo do diretório para o estado em que estavam no último commit.
 ```
 git restore
 ```
-11. Muda o nome do último commit feito
+11. Muda o nome do último commit feito.
 ```
 git commit --amend -m"nome do commit"
 ```
-12. Muda o nome do último commit feito
+12. Muda o nome do último commit feito.
 ```
 git commit --amend -m"nome do commit"
 ```
-13. Muda o nome do último commit feito abrindo o editor
+13. Muda o nome do último commit feito abrindo o editor.
 ```
 git commit --amend
 ```
@@ -80,11 +81,11 @@ git reset --hard <hash do commit>
 ```
 git reflog 
 ```
-18. Conecta os dois repositórios (remoto e local)
+18. Conecta os dois repositórios (remoto e local).
 ```
 git remote add origin <url>
 ```
-19. Envia as alterações locais para a branch "main" no repositório remoto chamado "origin" e configura essa branch como a upstream (permitindo futuras operações de push e pull sem a necessidade de especificar o nome da branch remota e local)
+19. Envia as alterações locais para a branch "main" no repositório remoto chamado "origin" e configura essa branch como a upstream (permitindo futuras operações de push e pull sem a necessidade de especificar o nome da branch remota e local).
 ```
 git push -u origin main
 ```
@@ -96,7 +97,47 @@ git push
 ```
 git pull 
 ```
-
+22. Cria uma nova branch e mudar para ela em um único passo.
+```
+git checkout -b <nome_da_branch>
+```
+23. Cria e adiciona um conteúdo dentro do arquivo criado.
+```
+echo "Meu projeto Git" > README.md
+```
+24. É usado para mudar para a branch principal (cujo nome é "main").
+```
+git checkout main
+```
+25. Lista o último commit de cada branch existente.
+```
+git branch -v
+```
+25. Mesca uma branch junto com a branch principal (main).
+```
+git merge <nome da branch que você quer mesclar>
+```
+26. Lista todas as suas branches locais e mostra em qual branch você está atualmente.
+```
+git branch
+```
+27. Serve para deletar/excluir uma branch específica.
+```
+git branch -d <nome da branch>
+```
+28. Busca todas as alterações do repositório remoto para o nosso repositório local. No entanto, ele não mescla automaticamente essas alterações com nossa branch atual, como o git pull faz.
+```
+git fetch
+```
+29. Clona somente uma branch específica de um repositório remoto.
+```
+git clone <url> --branch <nome da branch que quer clonar> --single-branch
+```
+30. o Git remove temporariamente as alterações não commitadas do seu diretório de trabalho e as armazena em um local especial chamado "stash" (Isso restaura o diretório de trabalho para o estado limpo, como se não houvesse nenhuma alteração).
+```
+git stash
+```
+  
 
 ## 🔍 Referências
 - [Digital Innovation One]().
