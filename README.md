@@ -80,6 +80,22 @@ git reset --hard <hash do commit>
 ```
 git reflog 
 ```
+18. Conecta os dois repositórios (remoto e local)
+```
+git remote add origin <url>
+```
+19. Envia as alterações locais para a branch "main" no repositório remoto chamado "origin" e configura essa branch como a upstream (permitindo futuras operações de push e pull sem a necessidade de especificar o nome da branch remota e local)
+```
+git push -u origin main
+```
+20. Envia suas alterações locais para o repositório remoto, atualizando-o com suas últimas modificações.
+```
+git push
+```
+21. Atualiza seu repositório local com as últimas alterações do repositório remoto. 
+```
+git pull 
+```
 
 
 ## 🔍 Referências
