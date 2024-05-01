@@ -133,7 +133,7 @@ git fetch
 ```
 git clone <url> --branch <nome da branch que quer clonar> --single-branch
 ```
-30. o Git remove temporariamente as alterações não commitadas do seu diretório de trabalho e as armazena em um local especial chamado "stash" (Isso restaura o diretório de trabalho para o estado limpo, como se não houvesse nenhuma alteração).
+30. Remove temporariamente as alterações não commitadas do diretório de trabalho e as armazena em um local especial chamado "stash" (Isso restaura o diretório de trabalho para o estado limpo, como se não houvesse nenhuma alteração).
 ```
 git stash
 ```
